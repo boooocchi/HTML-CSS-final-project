@@ -1,0 +1,28 @@
+// colors
+$primarycolor: #fda083;
+$tint: #fdf1ee;
+$shade: #de5126;
+$aomidori: #1a988d;
+$aomidorishade: #095650;
+$aomidoritint: #ebf7f6;
+$aomidoritint2: #c3fffb;
+
+@mixin cetner-container {
+  margin: 0 auto;
+}
+
+@mixin button {
+  border-radius: 10px;
+
+  background-color: $aomidoritint;
+  border: none;
+
+  font-size: 1.2rem;
+  background-color: $aomidori;
+  color: white;
+  cursor: pointer;
+}
+
+@mixin anton {
+  font-family: "Anton";
+}
