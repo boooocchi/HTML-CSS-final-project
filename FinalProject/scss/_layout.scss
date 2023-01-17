@@ -439,6 +439,9 @@ header {
         @include for-phone-only {
           font-size: 1.1rem;
         }
+        @include for-tablet-portrait-up {
+          top: 2%;
+        }
       }
       img {
         width: 85%;
