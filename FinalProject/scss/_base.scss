@@ -7,7 +7,7 @@ $aomidorishade: #095650;
 $aomidoritint: #ebf7f6;
 $aomidoritint2: #c3fffb;
 
-@mixin cetner-container {
+@mixin center-container {
   margin: 0 auto;
 }
 
@@ -25,4 +25,29 @@ $aomidoritint2: #c3fffb;
 
 @mixin anton {
   font-family: "Anton";
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//responsive
+@mixin for-phone-only {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
 }

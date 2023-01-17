@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0" />
 
     <!-- font -->
     <link
@@ -34,7 +34,9 @@
         <a href="#">Discover</a>
         <a href="#">About Us</a>
         <button class="contact">Contact</button>
-      </nav>
+        
+    </nav>
+    <a  class="burger"href="#"><i class="fa-solid fa-bars"></i></a>
     </header>
 
     <section class="hero-section">
@@ -45,9 +47,9 @@
           <button>Find Yours!!</button>
         </div>
         <!-- /.title -->
-        <div class="main-img-container">
+        <!-- <div class="main-img-container"> -->
           <img src="img/main-umbrella.png" alt="" />
-        </div>
+        <!-- </div> -->
         <!-- /.main-img-container -->
       </div>
       <!-- /.hero-container -->
@@ -58,53 +60,81 @@
 
     <section class="description">
       <div class="features">
-        <div class="img-container2">
-          <img class="lady" src="img/lady.png" alt="" />
+    
+  
+          <h1>Why choose ours??</h1>
+        <div class="description-container">
+          <div class="card-holder">
+
+            <div class="card">
+                <i class="fa-solid fa-wind"></i>
+                <h2 class="card-title">
+                    Wind-proof
+                </h2><!-- /.card-title -->
+              <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam
+                  ducimus enim quas
+              </p><!-- /.card-text -->
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-map-pin"></i>
+               
+                <h2 class="card-title">
+                    Trackable
+                </h2><!-- /.card-title -->
+              <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam
+                  ducimus enim quas
+              </p><!-- /.card-text -->
+            </div>
+            <div class="card">  
+                <i class="fa-solid fa-palette"></i>
+                <h2 class="card-title">
+                Bright Colors
+            </h2><!-- /.card-title -->
+              <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam
+                  ducimus enim quas
+              </p><!-- /.card-text -->
+            </div>
+          </div>
         </div>
-        <!-- /.img-container2 -->
-        <div class="right-description">
-          <h1>"Why choose US??"</h1>
-          <ul>
-            <li>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam
-              ducimus enim quas
-            </li>
-            <li>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam
-              ducimus enim quas
-            </li>
-            <li>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam
-              ducimus enim quas
-            </li>
-          </ul>
-        </div>
-        <!-- /.right-description -->
+   
       </div>
       <!-- /.desctription -->
+      <img class="lady" src="img/lady.png" alt="" />
     </section>
     <section class="latest-section">
-      <div class="left-latest-features">
-        <ul>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
-      </div>
-      <!-- /.left-latest-features -->
-      <div class="right-latest-features">
-        <div class="umbrella-container">
-          <img src="img/umbrella.png" alt="" />
-        </div>
-        <button class="View">
-          View the product &nbsp;<i class="fa-solid fa-eye"></i>
-        </button>
-      </div>
+        <h1 class="latest-title">New Featured Product</h1>
+        <div class="features-container">
+
+            <div class="left-latest-features">
+                <h2 class="product-name">" Inside-Out " </h2>
+                <ul>
+                  <li>Lorem, ipsum dolor. Lorem ipsum dolor sit.</li>
+                  <li>Lorem, ipsum dolor. Lorem ipsum dolor sit.</li>
+                  <li>Lorem, ipsum dolor. Lorem ipsum dolor sit.</li>
+                </ul>
+                <button class="view">
+                    View the product &nbsp;<i class="fa-solid fa-eye"></i>
+                </button>
+            </div>
+            <!-- /.left-latest-features -->
+            <div class="right-latest-features">
+                <div class="umbrella-container">
+                    <i class="fa-solid fa-cloud-rain rain-cloud"></i>
+                    <img src="img/umbrella.png" alt="" />
+                    <span class="price">$25~</span>
+                </div>
+                <button class="view">
+                    View the product &nbsp;<i class="fa-solid fa-eye"></i>
+                </button>
+              
+            </div>
+        </div><!-- /.features-container -->
     </section>
     <section class="testimonial">
+        <h1>&nbsp; Our customers voice</h1>
       <div class="testimonial-container">
         <div class="left-testimonial">
           <div class="testimonial-pics">
@@ -115,50 +145,87 @@
             <img class="testers" src="img/testimonial5.png" alt="" />
           </div>
           <!-- /.testimonial-pics -->
-          <h1 class="name">Ella Wood</h1>
+          <h2 class="name">Ella Wood</h2>
           <span class="job-title">Lorem ipsum dolor sit ameter</span>
-          <h2 class="review-title">" Best umbrella "</h2>
-          <p class="review">
-            "Lorem ipsum dolor sit amet consectetur <br> adipisicing Lorem, ipsum
-            dolor. Lorem, ipsum dolor.<br />
-            Lorem ipsum dolor sit elit Fugit,
-            eaque?"
-          </p>
         </div>
+          
+          <div class="right-testimonial">
+            <div class="stars">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div><!-- /.stars -->
+              <h2 class="review-title">"The best umbrella "</h2>
+              <p class="review">
+                "Lorem ipsum dolor sit amet consectetur <br> adipisicing Lorem, ipsum
+                dolor. Lorem, ipsum.<br />
+          
+              </p>
+          </div><!-- /.right-testimonial -->
       </div>
       <!-- /.testimonial-container -->
-      <div class="signup">
-        <p class="signup-title">
-          Sign up <span class="for">for</span
-          ><!-- /.for -->
-          discount!!
-        </p>
-        <p class="discount-detail">
-          Lorem ipsum dolor sit, amet <br />
-          adipisicing elit. Nostrum quo fugit eum neque <br />
-          explicabo voluptate distinctio repellat consequatur!
-        </p>
-
-        <i class="fa-solid fa-angles-down arrow"></i>
-        <i class="fa-solid fa-angles-down arrow"></i>
-
-        <div class="email-box">
-            <input class="email" type="email" placeholder="e-mail" />
-            <input type="submit" value="send" class="submit"></input>
-        </div>
-        
-
-        <!-- /.right-signup -->
-      </div>
-      <!-- /.signup -->
+      
     </section>
     <!-- /.testimonial -->
 
     <footer>
-        <div class="footer-pic-box">
-            
-            <img src="img/footer-umbrella.png" alt="">
-        </div><!-- /.footer-pic-box -->
+
+            <!-- <img src="img/footer-umbrella.png" alt=""> -->
+    
+            <div class="footer-container">
+                <img class="walking-guy" src="img/walking-guy.png" alt="">
+                <div class="signup">
+                    <p class="signup-title">
+                      Sign up <span class="for">for  discount!!</span
+                      ><!-- /.for -->
+                     
+                    </p>
+                    <p class="discount-detail">
+                      Lorem ipsum dolor sit, amet <br />
+                      adipisicing elit. Nostrum quo.
+                    </p>
+                 
+                   
+                    <div class="email-box">
+                        <input class="email" type="email" placeholder="e-mail" />
+                        <input type="submit" value="send" class="submit"></input>
+                     </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="company">
+                        <h3>Company</h3>
+                        <ul>
+                            <li>about us</li>
+                            <li>company</li>
+                            <li>contact</li>
+                            <li>privacy policy</li>
+                        </ul>
+                    </div><!-- /.company -->
+                    <div class="shop">
+                        <h3>Shop</h3>
+                        <ul>
+                            <li>product</li>
+                            <li>online store</li>
+                            <li>shop locations</li>
+                        </ul>
+                    </div><!-- /.shop -->
+                    <div class="icons">
+                        <h3>SNS</h3>
+                        <ul>
+                            
+                            <li><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</li>
+                            <li><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</li>
+                            <li><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</li>
+                            <li><i class="fa-brands fa-youtube"></i>&nbsp;YouTube</li>
+                            
+                        </ul>
+                    </div><!-- /.icons -->
+                </div><!-- /.footer-right -->
+            </div><!-- /.footer-container -->
     </footer>
   </body>
 </html>
