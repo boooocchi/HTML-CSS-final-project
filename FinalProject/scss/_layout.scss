@@ -232,7 +232,6 @@ header {
         letter-spacing: 5px;
         @include for-tablet-portrait-up {
           font-size: 6rem;
-          text-shadow: 0px 0px 3px rgba(213, 74, 24, 0.775);
         }
         @include for-phone-only {
           font-size: 4.5rem;
