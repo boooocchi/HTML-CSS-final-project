@@ -200,6 +200,7 @@ header button {
   }
 }
 .hero-section .hero-container {
+  min-height: 550px;
   padding-left: 2rem;
   color: #095650;
   width: 100%;
