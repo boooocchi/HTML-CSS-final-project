@@ -168,7 +168,7 @@ header {
     letter-spacing: 0.01rem;
     font-weight: 600;
     @include for-tablet-portrait-up {
-      margin-top: -1rem;
+      margin-top: -0.5rem;
     }
     @include for-phone-only {
       font-size: 1.5rem;
@@ -229,7 +229,7 @@ header {
         color: $aomidori;
         font-family: "Anton";
         font-variant-ligatures: none;
-        letter-spacing: 5px;
+        letter-spacing: 1px;
         @include for-tablet-portrait-up {
           font-size: 6rem;
         }
@@ -297,7 +297,7 @@ header {
     font-family: "Anton";
     position: relative;
     z-index: 1;
-    letter-spacing: 1px;
+    letter-spacing: 0.7;
     @include for-phone-only {
       font-size: 2rem;
     }
@@ -441,9 +441,9 @@ header {
     letter-spacing: 0.5px;
   }
   .latest-title {
-    letter-spacing: 1px;
+    letter-spacing: 0.3px;
     text-align: center;
-    width: 80%;
+    width: 100%;
     @include center-container;
     margin-bottom: 2.5rem;
     font-size: 2.5rem;
@@ -452,7 +452,7 @@ header {
       margin-bottom: 1rem;
     }
     @include for-phone-only {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       margin-bottom: 0.5rem;
     }
   }
@@ -625,12 +625,12 @@ header {
     color: $aomidoritint;
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.5px;
     @include for-tablet-portrait-up {
       margin-bottom: 1.5rem;
     }
     @include for-phone-only {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
     }
   }
 
