@@ -1,3 +1,7 @@
+.display-on {
+  right: 0% !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +9,18 @@
   text-decoration: none;
   font-family: "Rubik";
 }
+* a:hover,
+* a:active {
+  opacity: 0.5;
+}
+* button:hover,
+* button:active {
+  opacity: 0.8;
+}
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  min-width: 330px;
 }
 
 header {
@@ -18,11 +29,12 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #ebf7f6;
-  position: fixed;
+  position: sticky;
   width: 100%;
+  min-width: 330px;
   top: 0;
   padding: 0.5rem 3rem;
-  z-index: 3;
+  z-index: 4;
 }
 @media (max-width: 768px) {
   header {
@@ -88,6 +100,90 @@ header button {
   align-items: center;
   width: 100%;
 }
+.hero-section .hamburger-menu {
+  min-height: 350px;
+  width: 60%;
+  height: 100vh;
+  background-color: rgba(26, 152, 141, 0.7568627451);
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+  z-index: 3;
+  right: -100%;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.hero-section .hamburger-menu::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 769px) {
+  .hero-section .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .hero-section .hamburger-menu {
+    width: 100%;
+  }
+}
+.hero-section .hamburger-menu .icon-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+}
+.hero-section .hamburger-menu .icon-wrapper a {
+  color: #ebf7f6;
+  font-size: 1.7rem;
+}
+@media (max-width: 575px) {
+  .hero-section .hamburger-menu .icon-wrapper a {
+    font-size: 1.7rem;
+  }
+}
+.hero-section .hamburger-menu ul {
+  font-size: 1.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 6rem;
+  gap: 50px;
+  z-index: 4;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .hero-section .hamburger-menu ul {
+    font-size: 1.3rem;
+  }
+}
+.hero-section .hamburger-menu ul a {
+  color: #ebf7f6;
+}
+.hero-section .hamburger-menu ul button {
+  border-radius: 10px;
+  padding: 15px 30px;
+  width: 50%;
+  border: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #de5126;
+  color: #fdf1ee;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .hero-section .hamburger-menu ul button {
+    width: auto;
+    font-weight: 300;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 9px 13px;
+    text-align: center;
+  }
+}
 .hero-section .sub-title {
   font-size: 1.5rem;
   letter-spacing: 0.01rem;
@@ -95,19 +191,19 @@ header button {
 }
 @media (max-width: 768px) {
   .hero-section .sub-title {
-    margin-top: 4rem;
+    margin-top: -1rem;
   }
 }
 @media (max-width: 575px) {
   .hero-section .sub-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 .hero-section .hero-container {
   padding-left: 2rem;
   color: #095650;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   position: relative;
   background-color: #fda083;
   display: flex;
@@ -132,6 +228,11 @@ header button {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .hero-section .hero-container {
+    padding-left: 0;
+  }
+}
 @media (max-width: 575px) {
   .hero-section .hero-container {
     padding-left: 0;
@@ -154,6 +255,7 @@ header button {
   }
 }
 .hero-section .hero-container .left-container h1 {
+  line-height: 8.5rem;
   font-size: 7rem;
   border-bottom: 20px;
   font-weight: 700;
@@ -164,12 +266,15 @@ header button {
 }
 @media (max-width: 768px) {
   .hero-section .hero-container .left-container h1 {
+    font-size: 6rem;
     text-shadow: 0px 0px 3px rgba(213, 74, 24, 0.775);
   }
 }
 @media (max-width: 575px) {
   .hero-section .hero-container .left-container h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    margin-bottom: 1rem;
   }
 }
 .hero-section .hero-container .left-container button {
@@ -207,7 +312,7 @@ header button {
 
 .description {
   width: 100%;
-  padding: 4rem 1rem;
+  padding: 4rem 0;
   color: #ebf7f6;
   background-color: #1a988d;
   box-shadow: inset 0 0 0 20px #1a988d;
@@ -238,9 +343,15 @@ header button {
 @media (max-width: 768px) {
   .description .lady {
     width: auto;
-    height: 200%;
+    height: 170%;
     left: -50%;
     top: 20%;
+  }
+}
+@media (max-width: 575px) {
+  .description .lady {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .description .features {
@@ -300,6 +411,11 @@ header button {
   padding: 2rem 1.2rem 2rem;
   text-align: center;
   width: 32%;
+  position: relative;
+  transition: all 0.5s;
+}
+.description .features .card:hover {
+  transform: translate(0, -0.5rem);
 }
 .description .features .card i {
   font-size: 2rem;
@@ -467,23 +583,35 @@ header button {
 }
 .latest-section .right-latest-features .umbrella-container .price {
   position: absolute;
-  top: 5%;
-  left: 76%;
+  top: 2%;
+  left: 77%;
   color: #fdf1ee;
   font-size: 1.5rem;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .latest-section .right-latest-features .umbrella-container .price {
+    top: 3%;
+    left: 77%;
+  }
+}
 @media (max-width: 575px) {
   .latest-section .right-latest-features .umbrella-container .price {
     font-size: 1.1rem;
+    top: 5%;
+    left: 76%;
   }
 }
 .latest-section .right-latest-features .umbrella-container img {
   width: 85%;
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 8%;
   transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.latest-section .right-latest-features .umbrella-container img:hover {
+  transform: translateY(-50%) scale(1.1);
 }
 .latest-section .left-latest-features {
   padding: 1.5rem 0;
@@ -800,28 +928,34 @@ footer .footer-container .footer-right {
 footer .footer-container .footer-right .icons,
 footer .footer-container .footer-right .company,
 footer .footer-container .footer-right .shop {
-  justify-self: center;
   text-align: center;
 }
 footer .footer-container .footer-right .icons {
   font-size: 1rem;
-  justify-self: start;
   display: inline-block;
 }
 footer .footer-container .footer-right .company,
 footer .footer-container .footer-right .shop {
   justify-self: start;
+  z-index: 1;
 }
 footer .footer-container .footer-right h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-align: start;
+}
+@media (max-width: 768px) {
+  footer .footer-container .footer-right h3 {
+    text-align: center;
+  }
 }
 footer .footer-container .footer-right ul {
   list-style: none;
 }
 footer .footer-container .footer-right ul li {
   font-size: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  text-align: start;
 }
 footer .footer-container .signup {
   width: 40%;
@@ -901,7 +1035,7 @@ footer .footer-container .email-box .email {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   width: 100%;
-  padding: 0.3rem 0.7rem;
+  padding: 0.3rem 23% 0.3rem 0.7rem;
   vertical-align: middle;
 }
 footer .footer-container .email-box .submit {
@@ -917,6 +1051,12 @@ footer .footer-container .email-box .submit {
   vertical-align: middle;
   border: none;
   line-height: 21px;
+}
+footer .footer-container .email-box .submit:hover {
+  opacity: 0.8;
+}
+footer a {
+  color: #095650;
 }
 footer .walking-guy {
   position: absolute;

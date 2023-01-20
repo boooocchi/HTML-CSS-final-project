@@ -47,7 +47,10 @@ $aomidoritint2: #c3fffb;
 }
 
 @mixin for-desktop {
-  @media (max-width: 1200px) {
+  @media (min-width: 769px) {
     @content;
   }
+}
+.display-on {
+  right: 0% !important;
 }
